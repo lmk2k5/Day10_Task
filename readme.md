@@ -87,6 +87,14 @@ src
 | POST   | /enroll          | Enroll student in a course    | { "email": "doe@example.com", "courseId": "CS101" }`     |
 | GET    | /courses         | Get list of all courses       |                                                          |
 
+***The project uses Vert.x Mail Client to send registration passwords to students via email. SMTP is configured for Gmail by the steps given:***
+**Steps to Generate a Google App Password**
 
+1. **Login** to your Google Account
+2. Go to the Security tab.
+3. find and click **App Passwords** under "Signing in to Google". .
+4. For "Select device"and enter a name.
+5. Click generate.
+6. Copy the 16-character password shown use it in the project.
 
 This project is a educational task given to **23IOTA10**
